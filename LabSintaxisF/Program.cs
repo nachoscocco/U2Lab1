@@ -10,7 +10,7 @@ namespace LabSintaxisF
     {
         static void Main(string[] args)
         {
-            /*
+            
             // 1) Sumatoria de 2 numeros
             int num1;
             int num2;
@@ -22,7 +22,7 @@ namespace LabSintaxisF
             Console.Clear();
             Console.WriteLine("El resultado de la suma de " + num1 + " y " + num2 + " es " + aux);
             Console.ReadKey();
-
+/*
             // 2) Año biciesto
             int anio;
             Console.WriteLine("ingrese el año a ver");
@@ -75,7 +75,7 @@ namespace LabSintaxisF
                 if (i % 2 == 0) { Console.WriteLine(i); }
 
             }
-            Console.ReadKey();  */
+            Console.ReadKey();  
 
             // 5) Numero de mes a string
 
@@ -135,7 +135,7 @@ namespace LabSintaxisF
             }
 
 
-
+    */
 
 
 

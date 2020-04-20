@@ -20,17 +20,15 @@ namespace LabSintaxis3
                 Console.Clear();
 
             }
-            for (int i = 0; i < cantIteraciones; i++)
+            for (int i = cantIteraciones - 1; i < cantIteraciones; i--)
             {
-               int aux = i + 1;
-                Console.WriteLine("el elemento numero " + aux + " es " + vec[i]);
-                Console.ReadKey();
-            }
-            
-
-
-
-
+              
+                          
+               int aux = i + 1  ;
+                 Console.WriteLine("el elemento numero " + aux + " es " + vec[i]);
+                 Console.ReadKey();   
+                if (i==0){break;} 
+             }
 
         }
     }

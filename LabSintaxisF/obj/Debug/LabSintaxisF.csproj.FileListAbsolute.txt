@@ -5,3 +5,10 @@ C:\Users\nacho\source\repos\LabSintaxisF\bin\Debug\LabSintaxisF.exe
 C:\Users\nacho\source\repos\LabSintaxisF\bin\Debug\LabSintaxisF.pdb
 C:\Users\nacho\source\repos\LabSintaxisF\obj\Debug\LabSintaxisF.exe
 C:\Users\nacho\source\repos\LabSintaxisF\obj\Debug\LabSintaxisF.pdb
+C:\Users\nacho\source\U2Lab1\LabSintaxisF\bin\Debug\LabSintaxisF.exe.config
+C:\Users\nacho\source\U2Lab1\LabSintaxisF\bin\Debug\LabSintaxisF.exe
+C:\Users\nacho\source\U2Lab1\LabSintaxisF\bin\Debug\LabSintaxisF.pdb
+C:\Users\nacho\source\U2Lab1\LabSintaxisF\obj\Debug\LabSintaxisF.csprojAssemblyReference.cache
+C:\Users\nacho\source\U2Lab1\LabSintaxisF\obj\Debug\LabSintaxisF.csproj.CoreCompileInputs.cache
+C:\Users\nacho\source\U2Lab1\LabSintaxisF\obj\Debug\LabSintaxisF.exe
+C:\Users\nacho\source\U2Lab1\LabSintaxisF\obj\Debug\LabSintaxisF.pdb
