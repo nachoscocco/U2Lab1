@@ -10,7 +10,7 @@ namespace LabSintaxisF
     {
         static void Main(string[] args)
         {
-            
+        
             // 1) Sumatoria de 2 numeros
             int num1;
             int num2;
@@ -22,7 +22,7 @@ namespace LabSintaxisF
             Console.Clear();
             Console.WriteLine("El resultado de la suma de " + num1 + " y " + num2 + " es " + aux);
             Console.ReadKey();
-/*
+
             // 2) Año biciesto
             int anio;
             Console.WriteLine("ingrese el año a ver");
@@ -66,8 +66,7 @@ namespace LabSintaxisF
             numSuma = numSuma + 2;
             Console.WriteLine("el numero de Fibonacci en la posicion " + numSuma + " es " + fib2);
             Console.ReadKey();
-            
-
+       
             // 4) Numeros pares de 1 a 100
 
             for (int i = 1; i < 101; i++)
@@ -131,14 +130,159 @@ namespace LabSintaxisF
                 case 12:
                     Console.WriteLine("Mes 12 es Diciembre");
                     Console.ReadKey();
-                    break;
+                    break; 
+            }     
+
+             //6 numeros romanos 
+
+            i0nt num;
+            int numaux;
+            string romano = string.Empty; ;
+            Console.WriteLine("Ingrese el numero que quiere tranformar entre 1 y 3000");        
+            num = int.Parse(Console.ReadLine());
+            numaux = num;
+            while (num != 0)
+            {
+                romano += Conversor(ref num);
+            }
+            Console.WriteLine("El numero " + numaux + " es " + romano + " en romano ");
+            Console.ReadKey();
+
+            string Conversor (ref int nm)
+            {
+                
+
+                    if (nm >= 1000) {
+                        
+                        nm = nm - 1000;
+                        return "M";
+                }
+                    if (nm >= 900) {
+                       
+                        nm = nm - 900;
+                        return "CM";
+
+                }
+                    if (nm >= 500) {
+                        
+                        nm = nm - 500;
+                    return "D";
+                }
+
+                    if (nm >= 400) {
+                        
+                        nm = nm - 400;
+                    return "CD";
+                }
+
+                    if (nm >= 100) {
+                        
+                        nm = nm - 100;
+                    return "C";
+                }
+
+                    if (nm >= 90) {
+                        
+                        nm = nm - 90;
+                    return  "XC";
+                }
+                    if (nm >= 50) {
+                        
+                        nm = nm - 50;
+                    return "L";
+                }
+                    if (nm >= 40) {
+                        
+                        nm = nm - 40;
+                    return "XL";
+                }
+                    if (nm >= 10) {
+                        
+                        nm = nm - 10;
+                    return "X";
+                }
+                    if (nm >= 9) {
+                        
+                        nm = nm - 9;
+                    return "IX";
+                }
+                    if (nm >= 5) {
+                        
+                        nm = nm - 5;
+                    return "V";
+                }
+                    if (nm >= 4) {
+                        
+                        nm = nm - 4;
+                    return "IV";
+                }
+                    if (nm >= 1) {
+                        
+                        nm = nm - 1;
+                    return "I";
+                   
+                }
+                return "No existe"; 
+            } 
+
+    
+            // 7
+             Console.WriteLine("ingrese hasta que numero quiere comprabar numeros primos gemelos.");
+            int num = int.Parse(Console.ReadLine());
+
+            for (int i = 2; i != num; i++)
+            {                
+                if (Esprimo(i))
+                {
+                    for (int j = i + 1; j != num; j++)
+                    {                  
+                        if (Esprimo(j))
+                        {              
+                            if (Esgemelo(i, j))
+                            {
+                                Console.WriteLine($"({i},{j});");                           
+                            }
+                                                        
+                        }
+                    }
+
+                }
+
             }
 
+            Console.ReadKey();
 
-    */
+            bool Esprimo(int val)
+            {                
+                for (int r = 2; r != val - 1; r++)
+                {                  
+                    if (val % r == 0)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
 
+            bool Esgemelo(int numa, int numb)
+            {
+                int re;
+                re = numb - numa;
+                return (re == 2);
+            }
 
+            //8
 
+             string texto=string.Empty; 
+           string clave = "123456";
+           for (int i =0; i < 4; i++)
+            {
+            texto = Console.ReadLine();
+            if (clave == texto) break;
+           Console.WriteLine("Clave incorrecta");
+            }
+            if (clave == texto) Console.WriteLine("Clave correcta");
+            Console.ReadKey();
 
 
 
